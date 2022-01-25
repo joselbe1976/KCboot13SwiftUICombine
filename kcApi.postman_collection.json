@@ -1,0 +1,341 @@
+{
+	"info": {
+		"_postman_id": "a7b79c48-ac2f-4f13-9aa3-7b2bd7f2ee30",
+		"name": "kcApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registro Developer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Javier\",\n    \"apell1\" : \"Montiel\",\n    \"apell2\" : \"Lorenzo\",\n    \"email\" : \"jmontiel@keepcoding.es\",\n    \"password\" : \"123456\",\n    \"bootcamp\" : \"79C4FF45-57FE-48A7-809E-D9FE604D175A\",\n    \"photo\" : \"https://media-exp1.licdn.com/dms/image/C4D03AQG5kzFN4FlKqQ/profile-displayphoto-shrink_200_200/0/1517608880366?e=1626912000&v=beta&t=nuzvVrkT9Catm6mtkd9EEdQyWQEvm8UVP06YKeSrDRU\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/register/developer",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"register",
+						"developer"
+					]
+				},
+				"description": "Registro de un Developer en el Servidor."
+			},
+			"response": []
+		},
+		{
+			"name": "Login JWT",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"// Save Token in Enviromenent token",
+							"",
+							"pm.test(\"Token\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    console.log(jsonData);",
+							"",
+							"    pm.environment.set(\"token\", jsonData);",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "jmontiel@keepcoding.es",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/api/auth/login",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				},
+				"description": "Registro de un Developer en el Servidor."
+			},
+			"response": []
+		},
+		{
+			"name": "Test basico JWT",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Jose Luis\",\n    \"apell1\" : \"Bustos\",\n    \"apell2\" : \"Esteban\",\n    \"email\" : \"bejl@outlook.es\",\n    \"password\" : \"123456\",\n    \"bootcamp\" : \"A863ED66-2EE7-4B05-9FDE-7CC8B7C00D88\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/jwt/test",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"jwt",
+						"test"
+					]
+				},
+				"description": "Registro de un Developer en el Servidor."
+			},
+			"response": []
+		},
+		{
+			"name": "Lista de Heroes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/heros/all",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"heros",
+						"all"
+					]
+				},
+				"description": "Registro de un Developer en el Servidor."
+			},
+			"response": []
+		},
+		{
+			"name": "Lista de Developers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/api/data/developers",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"data",
+						"developers"
+					]
+				},
+				"description": "Registro de un Developer en el Servidor."
+			},
+			"response": []
+		},
+		{
+			"name": "Developer Connected",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/api/data/connected",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"data",
+						"connected"
+					]
+				},
+				"description": "Registro de un Developer en el Servidor."
+			},
+			"response": []
+		},
+		{
+			"name": "Lista de BootCamps",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/api/data/bootcamps",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"data",
+						"bootcamps"
+					]
+				},
+				"description": "Registro de un Developer en el Servidor."
+			},
+			"response": []
+		},
+		{
+			"name": "Crear nuevo Heroe",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Quake (Daisy Johnson)\",\n    \"description\" : \"No description\",\n    \"photo\" : \"http://i.annihil.us/u/prod/marvel/i/mg/b/c0/553a9abceb412/portrait_incredible.jpg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/heros/create",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"heros",
+						"create"
+					]
+				},
+				"description": "Registro de un Developer en el Servidor."
+			},
+			"response": []
+		},
+		{
+			"name": "Marcar Hero como Me gusta",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"hero\" : \"CE5827A7-7A94-4305-BBF4-E40E26A32154\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/data/herolike",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"data",
+						"herolike"
+					]
+				},
+				"description": "Registro de un Developer en el Servidor."
+			},
+			"response": []
+		}
+	]
+}
