@@ -26,6 +26,7 @@
 		31028412279F56EB001CC5A9 /* LIstaDetalleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31028411279F56EB001CC5A9 /* LIstaDetalleView.swift */; };
 		31028414279F5A6E001CC5A9 /* DetailMOdalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31028413279F5A6E001CC5A9 /* DetailMOdalView.swift */; };
 		31028416279F5CB3001CC5A9 /* FormsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31028415279F5CB3001CC5A9 /* FormsView.swift */; };
+		31FB8097279FF77E00A103E6 /* CompositionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FB8096279FF77E00A103E6 /* CompositionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		31028411279F56EB001CC5A9 /* LIstaDetalleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIstaDetalleView.swift; sourceTree = "<group>"; };
 		31028413279F5A6E001CC5A9 /* DetailMOdalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMOdalView.swift; sourceTree = "<group>"; };
 		31028415279F5CB3001CC5A9 /* FormsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsView.swift; sourceTree = "<group>"; };
+		31FB8096279FF77E00A103E6 /* CompositionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +83,27 @@
 		310283E9279F3199001CC5A9 /* SwiftUIIntro */ = {
 			isa = PBXGroup;
 			children = (
-				3102840E279F553A001CC5A9 /* New Group */,
+				31FB8095279FF76300A103E6 /* Dia 2 */,
+				3102840E279F553A001CC5A9 /* Dia 1 */,
 				310283EA279F3199001CC5A9 /* SwiftUIIntroApp.swift */,
 				310283EC279F3199001CC5A9 /* ContentView.swift */,
 				310283EE279F319B001CC5A9 /* Assets.xcassets */,
 				310283F0279F319B001CC5A9 /* Preview Content */,
+			);
+			path = SwiftUIIntro;
+			sourceTree = "<group>";
+		};
+		310283F0279F319B001CC5A9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				310283F1279F319B001CC5A9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3102840E279F553A001CC5A9 /* Dia 1 */ = {
+			isa = PBXGroup;
+			children = (
 				310283F8279F3950001CC5A9 /* StackView.swift */,
 				310283FA279F3BC8001CC5A9 /* HStackView.swift */,
 				310283FC279F3D1F001CC5A9 /* VHStackView.swift */,
@@ -102,22 +120,15 @@
 				31028413279F5A6E001CC5A9 /* DetailMOdalView.swift */,
 				31028415279F5CB3001CC5A9 /* FormsView.swift */,
 			);
-			path = SwiftUIIntro;
+			path = "Dia 1";
 			sourceTree = "<group>";
 		};
-		310283F0279F319B001CC5A9 /* Preview Content */ = {
+		31FB8095279FF76300A103E6 /* Dia 2 */ = {
 			isa = PBXGroup;
 			children = (
-				310283F1279F319B001CC5A9 /* Preview Assets.xcassets */,
+				31FB8096279FF77E00A103E6 /* CompositionView.swift */,
 			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		3102840E279F553A001CC5A9 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
+			path = "Dia 2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +214,7 @@
 				310283ED279F3199001CC5A9 /* ContentView.swift in Sources */,
 				31028414279F5A6E001CC5A9 /* DetailMOdalView.swift in Sources */,
 				31028416279F5CB3001CC5A9 /* FormsView.swift in Sources */,
+				31FB8097279FF77E00A103E6 /* CompositionView.swift in Sources */,
 				310283EB279F3199001CC5A9 /* SwiftUIIntroApp.swift in Sources */,
 				31028405279F452D001CC5A9 /* ButtonActionView.swift in Sources */,
 				31028403279F4345001CC5A9 /* ButtonsView.swift in Sources */,
