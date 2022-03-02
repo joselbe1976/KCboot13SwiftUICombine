@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FormsView: View {
-    @State  var name:String = ""
+    @State  var name:String = "Hola"
     @State  var apell1:String = ""
     @State  var hasChildren:Bool = false
     
@@ -54,11 +54,11 @@ struct FormsView: View {
                             .font(.title2)
                             Spacer()
                         }
-                        .padding([.leading, .trailing], 50)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(20)
                     }
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(20)
+                  
 
                 }
                 
