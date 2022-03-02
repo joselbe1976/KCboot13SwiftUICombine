@@ -23,7 +23,7 @@ struct LIstaDetalleView: View {
                       
        
                     } label: {
-                        //Vista
+                        //SubVista
                         HeroRowView(data: hero)
                     }
 
@@ -39,7 +39,7 @@ struct LIstaDetalleView: View {
                 }
             }
             .sheet(isPresented: $showDetail) {
-                //Dimiss
+                //Dimiss (actions)
             } content: {
                 //que veo en el modal
                 DetailMOdalView(showDetail: $showDetail )

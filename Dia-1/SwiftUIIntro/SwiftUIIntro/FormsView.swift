@@ -7,10 +7,14 @@
 
 import SwiftUI
 
+
+
 struct FormsView: View {
     @State  var name:String = "Hola"
     @State  var apell1:String = ""
     @State  var hasChildren:Bool = false
+    
+    @State var hola :Bool = false //warpper en una clase
     
     private var categorias = ["programador", "analista"]
     @State var selectedCategory = "analista"
@@ -47,6 +51,8 @@ struct FormsView: View {
                 Section(""){
                     Button {
                         //Action
+                        
+                        
                     } label: {
                         HStack{
                             Spacer()

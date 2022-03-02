@@ -12,7 +12,7 @@ struct SwiftUIIntroApp: App {
     var body: some Scene {
         //viewmodel global
         WindowGroup {
-            FormsView()
+            SwiftUIView()
 
         }
     }
