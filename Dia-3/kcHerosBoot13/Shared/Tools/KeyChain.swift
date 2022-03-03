@@ -9,7 +9,7 @@ import Foundation
 import KeychainSwift
 
 //Guardado en hey chain
-func saveKC(key:String, value:String) -> Bool {
+@discardableResult func saveKC(key:String, value:String) -> Bool {
     if let data = value.data(using: .utf8){
         let keychain = KeychainSwift()
         keychain.set(data, forKey: key)

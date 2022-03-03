@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct kcHerosBoot13App: App {
+    
+    //aqui es globalllll
+    
+    @StateObject var rootViewModel = RootViewModel() //global a la App
+    
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            RootView()
+                .environmentObject(rootViewModel)
         }
     }
 }

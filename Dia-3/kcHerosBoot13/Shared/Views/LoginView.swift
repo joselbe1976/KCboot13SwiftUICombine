@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+   @EnvironmentObject var rootViewModel : RootViewModel
+    
    @State private var mail  = "" //usuario
    @State private var password = "" //Clave
-    @State private var animationMonth = 1.0
+   @State private var animationMonth = 1.0
     
     var body: some View {
         ZStack{
@@ -64,7 +67,9 @@ struct LoginView: View {
                 
                 //Login Button
                 Button {
-                    //TODO: action here
+                    //login de la App
+                    rootViewModel.login(user: mail, password: password)
+                    
                     
                 } label: {
                     Text("Entrar")
