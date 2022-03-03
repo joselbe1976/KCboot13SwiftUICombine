@@ -38,11 +38,22 @@
 		31A41C9127D16E1E0018A297 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A41C8F27D16E1E0018A297 /* PhotoViewModel.swift */; };
 		31A41C9327D1700B0018A297 /* HerosDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A41C9227D1700B0018A297 /* HerosDetailView.swift */; };
 		31A41C9427D1700B0018A297 /* HerosDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A41C9227D1700B0018A297 /* HerosDetailView.swift */; };
+		31A41C9C27D175D30018A297 /* kcHerosBoot13Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A41C9B27D175D30018A297 /* kcHerosBoot13Tests.swift */; };
 		31D7767C27D143520002268E /* kcHerosBoot13App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7766C27D143510002268E /* kcHerosBoot13App.swift */; };
 		31D7767D27D143520002268E /* kcHerosBoot13App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7766C27D143510002268E /* kcHerosBoot13App.swift */; };
 		31D7768027D143520002268E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D7766E27D143520002268E /* Assets.xcassets */; };
 		31D7768127D143520002268E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D7766E27D143520002268E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31A41C9D27D175D30018A297 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31D7766727D143510002268E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31D7767227D143520002268E;
+			remoteInfo = "kcHerosBoot13 (iOS)";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		31A41C6727D146220018A297 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -61,6 +72,8 @@
 		31A41C8C27D16D160018A297 /* HeroesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesRowView.swift; sourceTree = "<group>"; };
 		31A41C8F27D16E1E0018A297 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		31A41C9227D1700B0018A297 /* HerosDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosDetailView.swift; sourceTree = "<group>"; };
+		31A41C9927D175D30018A297 /* kcHerosBoot13Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kcHerosBoot13Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31A41C9B27D175D30018A297 /* kcHerosBoot13Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kcHerosBoot13Tests.swift; sourceTree = "<group>"; };
 		31D7766C27D143510002268E /* kcHerosBoot13App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kcHerosBoot13App.swift; sourceTree = "<group>"; };
 		31D7766E27D143520002268E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31D7767327D143520002268E /* kcHerosBoot13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kcHerosBoot13.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		31A41C9627D175D30018A297 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31D7767027D143520002268E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,12 +118,21 @@
 			path = Heros;
 			sourceTree = "<group>";
 		};
+		31A41C9A27D175D30018A297 /* kcHerosBoot13Tests */ = {
+			isa = PBXGroup;
+			children = (
+				31A41C9B27D175D30018A297 /* kcHerosBoot13Tests.swift */,
+			);
+			path = kcHerosBoot13Tests;
+			sourceTree = "<group>";
+		};
 		31D7766627D143510002268E = {
 			isa = PBXGroup;
 			children = (
 				31D7768F27D1443D0002268E /* kcHerosBoot13--iOS--Info.plist */,
 				31D7766B27D143510002268E /* Shared */,
 				31D7767A27D143520002268E /* macOS */,
+				31A41C9A27D175D30018A297 /* kcHerosBoot13Tests */,
 				31D7767427D143520002268E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,6 +157,7 @@
 			children = (
 				31D7767327D143520002268E /* kcHerosBoot13.app */,
 				31D7767927D143520002268E /* kcHerosBoot13.app */,
+				31A41C9927D175D30018A297 /* kcHerosBoot13Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,6 +220,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		31A41C9827D175D30018A297 /* kcHerosBoot13Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31A41CA127D175D30018A297 /* Build configuration list for PBXNativeTarget "kcHerosBoot13Tests" */;
+			buildPhases = (
+				31A41C9527D175D30018A297 /* Sources */,
+				31A41C9627D175D30018A297 /* Frameworks */,
+				31A41C9727D175D30018A297 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31A41C9E27D175D30018A297 /* PBXTargetDependency */,
+			);
+			name = kcHerosBoot13Tests;
+			productName = kcHerosBoot13Tests;
+			productReference = 31A41C9927D175D30018A297 /* kcHerosBoot13Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		31D7767227D143520002268E /* kcHerosBoot13 (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31D7768427D143520002268E /* Build configuration list for PBXNativeTarget "kcHerosBoot13 (iOS)" */;
@@ -237,6 +285,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					31A41C9827D175D30018A297 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 31D7767227D143520002268E;
+					};
 					31D7767227D143520002268E = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -264,11 +316,19 @@
 			targets = (
 				31D7767227D143520002268E /* kcHerosBoot13 (iOS) */,
 				31D7767827D143520002268E /* kcHerosBoot13 (macOS) */,
+				31A41C9827D175D30018A297 /* kcHerosBoot13Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		31A41C9727D175D30018A297 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31D7767127D143520002268E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +350,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		31A41C9527D175D30018A297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A41C9C27D175D30018A297 /* kcHerosBoot13Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31D7766F27D143520002268E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,6 +404,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		31A41C9E27D175D30018A297 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31D7767227D143520002268E /* kcHerosBoot13 (iOS) */;
+			targetProxy = 31A41C9D27D175D30018A297 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		31A41C6827D146220018A297 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -349,6 +425,45 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		31A41C9F27D175D30018A297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kc.boot13.kcHerosBoot13Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kcHerosBoot13.app/kcHerosBoot13";
+			};
+			name = Debug;
+		};
+		31A41CA027D175D30018A297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kc.boot13.kcHerosBoot13Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kcHerosBoot13.app/kcHerosBoot13";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		31D7768227D143520002268E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -578,6 +693,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		31A41CA127D175D30018A297 /* Build configuration list for PBXNativeTarget "kcHerosBoot13Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31A41C9F27D175D30018A297 /* Debug */,
+				31A41CA027D175D30018A297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		31D7766A27D143510002268E /* Build configuration list for PBXProject "kcHerosBoot13" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

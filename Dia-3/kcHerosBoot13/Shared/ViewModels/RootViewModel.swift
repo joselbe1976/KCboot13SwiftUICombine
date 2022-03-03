@@ -22,6 +22,18 @@ final class RootViewModel: ObservableObject {
     
     var suscribers = Set<AnyCancellable>() //aqui se almacenan los suscriptores
     
+    
+    
+    init(){
+        status = .loading
+        let token = loadKC(key: CONST_TOKEN_ID)
+        if let jwt = token {
+            tokenJWT = jwt //validaciones de caducidad del token.
+            status = .loaded
+        }
+        
+    }
+    
     //Funcion de Login
     func login(user:String, password:String){
         status = .loading
