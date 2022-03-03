@@ -7,21 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31A41C6127D145090018A297 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 31A41C6027D145090018A297 /* KeychainSwift */; };
+		31A41C6527D146220018A297 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31A41C6827D146220018A297 /* Localizable.strings */; };
+		31A41C6627D146220018A297 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31A41C6827D146220018A297 /* Localizable.strings */; };
+		31A41C6B27D1467C0018A297 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A41C6A27D1467C0018A297 /* LoginView.swift */; };
+		31A41C6C27D1467C0018A297 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A41C6A27D1467C0018A297 /* LoginView.swift */; };
+		31A41C6E27D1473F0018A297 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A41C6D27D1473F0018A297 /* KeyChain.swift */; };
+		31A41C6F27D1473F0018A297 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A41C6D27D1473F0018A297 /* KeyChain.swift */; };
 		31D7767C27D143520002268E /* kcHerosBoot13App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7766C27D143510002268E /* kcHerosBoot13App.swift */; };
 		31D7767D27D143520002268E /* kcHerosBoot13App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7766C27D143510002268E /* kcHerosBoot13App.swift */; };
-		31D7767E27D143520002268E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7766D27D143510002268E /* ContentView.swift */; };
-		31D7767F27D143520002268E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7766D27D143510002268E /* ContentView.swift */; };
 		31D7768027D143520002268E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D7766E27D143520002268E /* Assets.xcassets */; };
 		31D7768127D143520002268E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D7766E27D143520002268E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31A41C6727D146220018A297 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		31A41C6927D146250018A297 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		31A41C6A27D1467C0018A297 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		31A41C6D27D1473F0018A297 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		31D7766C27D143510002268E /* kcHerosBoot13App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kcHerosBoot13App.swift; sourceTree = "<group>"; };
-		31D7766D27D143510002268E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		31D7766E27D143520002268E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31D7767327D143520002268E /* kcHerosBoot13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kcHerosBoot13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D7767927D143520002268E /* kcHerosBoot13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kcHerosBoot13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D7767B27D143520002268E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		31D7768F27D1443D0002268E /* kcHerosBoot13--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "kcHerosBoot13--iOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31A41C6127D145090018A297 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +55,7 @@
 		31D7766627D143510002268E = {
 			isa = PBXGroup;
 			children = (
+				31D7768F27D1443D0002268E /* kcHerosBoot13--iOS--Info.plist */,
 				31D7766B27D143510002268E /* Shared */,
 				31D7767A27D143520002268E /* macOS */,
 				31D7767427D143520002268E /* Products */,
@@ -54,8 +65,13 @@
 		31D7766B27D143510002268E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				31A41C6827D146220018A297 /* Localizable.strings */,
 				31D7766C27D143510002268E /* kcHerosBoot13App.swift */,
-				31D7766D27D143510002268E /* ContentView.swift */,
+				31D7768E27D1440C0002268E /* Models */,
+				31D7768D27D144060002268E /* Services */,
+				31D7768C27D144020002268E /* Tools */,
+				31D7768B27D143FA0002268E /* ViewModels */,
+				31D7768A27D143F30002268E /* Views */,
 				31D7766E27D143520002268E /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -78,6 +94,43 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		31D7768A27D143F30002268E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				31A41C6A27D1467C0018A297 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		31D7768B27D143FA0002268E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		31D7768C27D144020002268E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				31A41C6D27D1473F0018A297 /* KeyChain.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		31D7768D27D144060002268E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		31D7768E27D1440C0002268E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,6 +147,9 @@
 			dependencies = (
 			);
 			name = "kcHerosBoot13 (iOS)";
+			packageProductDependencies = (
+				31A41C6027D145090018A297 /* KeychainSwift */,
+			);
 			productName = "kcHerosBoot13 (iOS)";
 			productReference = 31D7767327D143520002268E /* kcHerosBoot13.app */;
 			productType = "com.apple.product-type.application";
@@ -140,8 +196,12 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 31D7766627D143510002268E;
+			packageReferences = (
+				31A41C5F27D145090018A297 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 31D7767427D143520002268E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31D7768027D143520002268E /* Assets.xcassets in Resources */,
+				31A41C6527D146220018A297 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31D7768127D143520002268E /* Assets.xcassets in Resources */,
+				31A41C6627D146220018A297 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +238,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31D7767E27D143520002268E /* ContentView.swift in Sources */,
+				31A41C6B27D1467C0018A297 /* LoginView.swift in Sources */,
+				31A41C6E27D1473F0018A297 /* KeyChain.swift in Sources */,
 				31D7767C27D143520002268E /* kcHerosBoot13App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,12 +248,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31D7767F27D143520002268E /* ContentView.swift in Sources */,
+				31A41C6C27D1467C0018A297 /* LoginView.swift in Sources */,
+				31A41C6F27D1473F0018A297 /* KeyChain.swift in Sources */,
 				31D7767D27D143520002268E /* kcHerosBoot13App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		31A41C6827D146220018A297 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31A41C6727D146220018A297 /* es */,
+				31A41C6927D146250018A297 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		31D7768227D143520002268E /* Debug */ = {
@@ -313,6 +389,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "kcHerosBoot13--iOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,6 +420,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "kcHerosBoot13--iOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -446,6 +526,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		31A41C5F27D145090018A297 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		31A41C6027D145090018A297 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31A41C5F27D145090018A297 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 31D7766727D143510002268E /* Project object */;
 }
